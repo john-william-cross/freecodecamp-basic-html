@@ -1,0 +1,108 @@
+<!doctype html>
+<!--tells browser document type; defaults to html5-->
+
+<html lang="en">
+<!--html element with langauage attribute-->
+
+<head>
+    <!--head element-->
+    <meta charset="utf-8">
+    <!--defines character encoding-->
+
+    <title>CatPhotoApp</title>
+    <!--title is the only mandatory element inside head-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h2>CatPhotoApp</h2>
+
+    <main>
+        <!--main element in html5 helps search engines and devs find main content of page-->
+
+        <a href="#footer">Jump to Bottom</a>
+        <!--this anchor element links to an internal section of the page; in this case, to the footer element that was given an id of footer -->
+
+        <p><a href="#" target="_blank">This</a> is a dead link.</p>
+
+        <p>View more <a href="https://www.google.com/search?q=cat+photos&rlz=1C5CHFA_enUS857US857&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj80dHHofvpAhXWVTABHTqDA1AQ_AUoAXoECBIQAw&biw=625&bih=908" target="_blank">cat photos</a></p>
+        <!--<a> tag (anchor element) defines a hyperlink; href specifies the url; target="_blank" opens link in new tab; "cat photos" is clickable text displayed as link-->
+
+        <a href="https://www.cnn.com" target="_blank"><img src="https://bit.ly/fcc-relaxing-cat" alt="kitten"></a>
+        <!--insert image, provide alt attribute for screen readers for improved accessibility. inserting image within an <a>anchor element makes the image a clickable link-->
+
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+        <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+        <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        <div>
+            <!--div element is a general purple container for other elements-->
+            <p>Things Cats Love:</p>
+            <ul>
+                <!--creates an unordered list-->
+                <li>naps</li>
+                <!--list items-->
+                <li>catnip</li>
+                <li>lasers</li>
+            </ul>
+
+
+            <p>Things Cats Hate:</p>
+            <ol>
+                <!--creates an ordered list-->
+                <li>water</li>
+                <!--list items-->
+                <li>dogs</li>
+                <li>vacuums</li>
+            </ol>
+        </div>
+
+        <input type="text" placeholder="type in here">
+        <!--input elements take input from the user. in this case type of input is text that goes into a text box. the placeholder puts light text in box that can be overwritten-->
+
+        <br><br>
+
+        <form action="/submit-cat-photo"><input type="text" required placeholder="cat photo URL">
+            <br><br>
+
+            <label for="Indoor">
+
+                <input id="indoor" value="indoor" type="radio" required name="indoor-outdoor" checked>Indoor
+            </label>
+            <!--<label> attribute specifies the type of form element the label is bound to; -->
+            <!--radio buttons allow for choosing one of multiple options; "checked" makes that option checked by default-->
+            <label for="Outdoor">
+                <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+            </label>
+            <!--"value" attribute is what reports the selection to the server; make sure value matches the text-->
+            <br><br>
+            <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality" checked> Loving
+            </label>
+            <!--creates checkbox-->
+            <label for="scratchy"><input id="scratchy" value="scratchy" type="checkbox" name="personality"> Scratchy
+            </label><label for="sleepy"><input id="sleepy" value="sleepy" type="checkbox" name="personality"> Sleepy
+            </label>
+
+            <br><br>
+            <button type="submit">Submit Form</button></form>
+        <!--creates a form for submitting data; attribute "required" makes user enter text before submitting-->
+
+        <br>
+
+        <br><br>
+
+        <footer id="footer">Copyright Cat Photo App <a href="#">
+                <p>back to top</p>
+            </a></footer>
+        <!--anchor tag with blank href reloads page, giving illusion of jumping to top-->
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body></html>
